@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import Home from './Home';
+import CV from './CV';
+import Contact from './Contact';
+import Calculator from './Calculator';
+import Clients from './Clients';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Ale's portfolio
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  //state = { };
+
+  render() {
+    // const { splashScreen, lightMode } = this.state;
+    return (
+      // <div className={lightMode ? 'light-mode' : 'dark-mode'}>
+      <div>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/cv" component={CV} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/calculator" component={Calculator} />
+            <Route exact path="/clients" component={Clients} />
+          </Switch>
+        </Router>
+        )}
+        </div>
+    );
+  }
 }
+
 
 export default App;
