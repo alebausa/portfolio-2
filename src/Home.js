@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Home.css';
 
 class Home extends Component {
   render() {
@@ -6,7 +7,7 @@ class Home extends Component {
       <div className="container">
         <header className="header">
           <div className="col-2">
-            Image
+            <img src={require("./data/images/favicon.png")} alt="initials logo" className="logo-img" />
           </div>
           <div className="col-2">
             <h1>Fullstack developer &amp; <br />webapp designer</h1>
