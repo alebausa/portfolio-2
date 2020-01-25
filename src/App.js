@@ -9,6 +9,7 @@ import Calculator from './Calculator';
 import Clients from './Clients';
 import NotFoundPage from './NotFoundPage';
 
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 
 class App extends Component {

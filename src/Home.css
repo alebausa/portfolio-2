@@ -1,3 +1,12 @@
-.logo-img {
-  width: 200px;
+/************* JUMBO ************/
+
+.jumbo {
+  background-image: url('./data/images/iphone.jpg');
+  background-position: center;
+  width: 100%;
+  height: 50%;
+}
+
+.jumbo-title {
+  padding: 100px 0 100px 100px;
 }

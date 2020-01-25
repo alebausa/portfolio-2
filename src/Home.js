@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
 import './Home.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class Home extends Component {
   render() {
     return (
-      <div className="container">
-        <header className="header">
-          <div className="col-2">
-            <img src={require("./data/images/favicon.png")} alt="initials logo" className="logo-img" />
-          </div>
-          <div className="col-2">
-            <h1>Fullstack developer &amp; <br />webapp designer</h1>
-            <h2>Bringing your ideas to life</h2>
-            <button className="primary">Calculate the price of your project for free ></button>
-          </div>
-        </header>
+      <>
+        <Container fluid className="jumbo">
+          <Row>
+            <Col>
+              <div className="jumbo-title">
+                <h1>Fullstack developer &amp;<br />webapp designer</h1>
+                <h4>Bringing your ideas to life</h4>
+                <button className="button outlined">Calculate the price of your project for free</button>
+              </div>
+            </Col>
+          </Row>
+        </Container >
+
         <section className="body-section">
           <div className="col-2">
             <h3>Remarkable projects</h3>
@@ -27,7 +32,7 @@ class Home extends Component {
             </ul>
           </div>
           <div className="col-2">
-            Images
+            <p>Images</p>
           </div>
         </section>
         <section className="body-section">
@@ -35,7 +40,7 @@ class Home extends Component {
 
           </div>
         </section>
-      </div>
+      </>
     );
   }
 }
