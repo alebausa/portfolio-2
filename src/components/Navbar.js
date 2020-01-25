@@ -17,14 +17,14 @@ class NavBar extends Component {
   render() {
     return (
       <>
-        <Navbar collapseOnSelect expand="lg" bg="light" position="sticky">
+        <Navbar collapseOnSelect expand="lg" bg="light" position="sticky" className="navbar">
           <Navbar.Brand>
             <img
               src="favicon.png"
               width="50"
               height="30"
-              className="d-inline-block align-top"
-              alt="Ale Bausa's icon"
+              className="d-inline-block align-middle"
+              alt="Ale Bausa's logo"
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -37,7 +37,7 @@ class NavBar extends Component {
               <Nav.Link><NavLink to="/clients" exact className="navbar-item">Client area</NavLink></Nav.Link>
               <Nav className="justify-content-end">
                 <Nav.Link><NavLink to="/clients" exact className="navbar-item">
-                  <button className="button primary">Client area</button>
+                  <button className="button outlined">Client area</button>
                 </NavLink></Nav.Link>
               </Nav>
             </Nav>

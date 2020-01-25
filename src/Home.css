@@ -2,11 +2,31 @@
 
 .jumbo {
   background-image: url('./data/images/iphone.jpg');
+  min-height: 600px;
+  background-attachment: fixed;
   background-position: center;
-  width: 100%;
-  height: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .jumbo-title {
   padding: 100px 0 100px 100px;
+}
+
+/********* PROJECTS ***********/
+
+.project-pics {
+  padding: 10%;
+  background-color: #E93F4A;
+  margin: 0;
+}
+
+.project-pics li {
+  width: 90%;
+  transition: all ease 1s;
+}
+
+.project-pics li:hover {
+  width: 110%;
+  transition: all ease 1s;
 }
