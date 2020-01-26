@@ -3,9 +3,29 @@ import './Home.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+/* Icons */
+import content from './data/images/content.png';
+import brand from './data/images/brand.png';
+import web from './data/images/web.png';
+import seo from './data/images/seo.png';
+import analysis from './data/images/analysis.png';
+/* Portfolio pictures */
+import iconfess from './data/images/iconfess.png';
+import plantiful from './data/images/plantiful.png';
 
 class Home extends Component {
+  state = {
+    portfolio: iconfess,
+  };
+
+  handleMouseOver = e => {
+    this.setState({
+      portfolio: e.target.value,
+    });
+  };
+
   render() {
+    const { portfolio } = this.state;
     return (
       <>
         <Container fluid className="jumbo">
@@ -22,35 +42,56 @@ class Home extends Component {
 
         <Container fluid>
           <Row>
+
             <Col xs={12} sm={12} md={6} lg={6} className="project-pics">
-              <h3>Remarkable projects</h3>
-              <ul className="icon-list">
-                <li>www.iconfessapp.com</li>
-                <li>www.sigridfadrique.com</li>
-                <li>www.lamodebcn.com</li>
-                <li>www.elartesano.com</li>
-                <li>Misc.</li>
-              </ul>
+              <img src={portfolio} alt="portfolio example" />
             </Col>
+
             <Col xs={12} sm={12} md={6} lg={6} className="project-list">
-              <h3>Remarkable projects</h3>
-              <ul className="icon-list">
-                <li>www.iconfessapp.com</li>
-                <li>www.sigridfadrique.com</li>
-                <li>www.lamodebcn.com</li>
-                <li>www.elartesano.com</li>
-                <li>Misc.</li>
-              </ul>
+              <h2>Remarkable projects</h2>
+              <div className="project-list-container">
+                <div className="icon-list">
+                  <button className="tag" value={iconfess} onClick={this.handleMouseOver}>www.iconfessapp.com</button>
+                  <button className="tag" value={plantiful} onClick={this.handleMouseOver}>www.plantifulapp.com</button>
+                  <button className="tag">www.sigridfadrique.com</button>
+                  <button className="tag">www.lamodebcn.com</button>
+                  <button className="tag">www.elartesano.com</button>
+                  <button className="tag">Misc.</button>
+                </div>
+                <div className="icon-text">
+                  <p>{this.state.portfolioText}</p>
+                  </div>
+              </div>
             </Col>
           </Row>
         </Container>
 
-        <Container className="home-icon-section">
-          <h3>What can I do for you?</h3>
-          <Row>
+        <Container fluid className="home-icon-section">
+          <Row className="justify-content-md-center">
+            <Col xs={12} sm={12} md={12} lg={12}>
+              <h3>What can I do for you?</h3>
+            </Col>
+          </Row>
+          <Row className="justify-content-md-center">
             <Col xs={12} sm={6} md={2} lg={2} className="home-icon">
-              <img src="data/images/content.png" alt="content icon" />
+              <img src={content} alt="content icon" />
               <p>Write the content of the website and take or find the pictures</p>
+            </Col>
+            <Col xs={12} sm={6} md={2} lg={2} className="home-icon">
+              <img src={brand} alt="content icon" />
+              <p>Design your website according to your brand (or design your branding!)</p>
+            </Col>
+            <Col xs={12} sm={6} md={2} lg={2} className="home-icon">
+              <img src={web} alt="content icon" />
+              <p>Build your website with the technology that best suits your needs</p>
+            </Col>
+            <Col xs={12} sm={6} md={2} lg={2} className="home-icon">
+              <img src={seo} alt="content icon" />
+              <p>SEO &amp; SEM strategies to make sure you are found</p>
+            </Col>
+            <Col xs={12} sm={6} md={2} lg={2} className="home-icon">
+              <img src={analysis} alt="content icon" />
+              <p>Community managing and analytics reports to improve it even more</p>
             </Col>
           </Row>
         </Container>

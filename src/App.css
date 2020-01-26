@@ -79,7 +79,8 @@ h5 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.5em;
 }
 
 li, a {
@@ -88,14 +89,7 @@ li, a {
 
 button {
   font-size: 16px;
-  transition: all ease 1s;
 }
-
-button:hover {
-  width: 120%;
-  transition: all ease 1s;
-}
-
 
 /***************** BUTTONS ***********/
 
@@ -127,6 +121,23 @@ button:hover {
 .outlined:hover {
   background-color: #a50912;
   color: #f0f0f0;
+}
+
+.tag {
+  background-color: transparent;
+  border: 1px solid #fb8f97;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  margin: 5px 15px 5px 0;
+}
+
+.tag:focus {
+  box-shadow: 0 2px 2px 0 #c1c1c1;
+}
+
+.tag:hover {
+  
 }
 
 
