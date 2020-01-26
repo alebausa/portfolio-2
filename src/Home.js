@@ -12,6 +12,10 @@ import analysis from './data/images/analysis.png';
 /* Portfolio pictures */
 import iconfess from './data/images/iconfess.png';
 import plantiful from './data/images/plantiful.png';
+import elarteessano from './data/images/elarteessano.png';
+import sigrid from './data/images/sigrid.png';
+/* Texts */
+
 
 class Home extends Component {
   state = {
@@ -53,13 +57,13 @@ class Home extends Component {
                 <div className="icon-list">
                   <button className="tag" value={iconfess} onClick={this.handleMouseOver}>www.iconfessapp.com</button>
                   <button className="tag" value={plantiful} onClick={this.handleMouseOver}>www.plantifulapp.com</button>
-                  <button className="tag">www.sigridfadrique.com</button>
+                  <button className="tag" value={sigrid} onClick={this.handleMouseOver}>www.sigridfadrique.com</button>
                   <button className="tag">www.lamodebcn.com</button>
-                  <button className="tag">www.elartesano.com</button>
+                  <button className="tag"value={elarteessano} onClick={this.handleMouseOver}>www.elartesano.com</button>
                   <button className="tag">Misc.</button>
                 </div>
                 <div className="icon-text">
-                  <p>{this.state.portfolioText}</p>
+                  <p></p>
                   </div>
               </div>
             </Col>

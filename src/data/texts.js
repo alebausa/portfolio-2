@@ -1,0 +1,1 @@
+export default iconfesstext = "iConfess was the <span>December 2019 Hackshow winner app</span>.";
