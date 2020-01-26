@@ -45,11 +45,12 @@ class Home extends Component {
           </Row>
         </Container>
 
-        <Container>
+        <Container className="home-icon-section">
+          <h3>What can I do for you?</h3>
           <Row>
             <Col xs={12} sm={6} md={2} lg={2} className="home-icon">
-              <img src="./data/images/content.png" alt="content icon" />
-              <p>Hola que tal</p>
+              <img src="data/images/content.png" alt="content icon" />
+              <p>Write the content of the website and take or find the pictures</p>
             </Col>
           </Row>
         </Container>

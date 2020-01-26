@@ -1,7 +1,7 @@
 /************* JUMBO ************/
 
 .jumbo {
-  background-image: url('./data/images/iphone.jpg');
+  background-image: url('./data/images/portfolio.jpg');
   min-height: 600px;
   background-attachment: fixed;
   background-position: center;
@@ -21,12 +21,8 @@
   margin: 0;
 }
 
-.project-pics li {
-  width: 90%;
-  transition: all ease 1s;
-}
+/*********** ICONS ************/
 
-.project-pics li:hover {
-  width: 110%;
-  transition: all ease 1s;
+.home-icon-section {
+  padding: 400px;
 }
