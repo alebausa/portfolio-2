@@ -14,6 +14,7 @@ import iconfess from './data/images/iconfess.png';
 import plantiful from './data/images/plantiful.png';
 import elarteessano from './data/images/elarteessano.png';
 import sigrid from './data/images/sigrid.png';
+import lamode from './data/images/lamode.png';
 /* Texts */
 
 
@@ -52,14 +53,14 @@ class Home extends Component {
             </Col>
 
             <Col xs={12} sm={12} md={6} lg={6} className="project-list">
-              <h2>Remarkable projects</h2>
+              <h2>Latest projects</h2>
               <div className="project-list-container">
                 <div className="icon-list">
                   <button className="tag" value={iconfess} onClick={this.handleMouseOver}>www.iconfessapp.com</button>
-                  <button className="tag" value={plantiful} onClick={this.handleMouseOver}>www.plantifulapp.com</button>
                   <button className="tag" value={sigrid} onClick={this.handleMouseOver}>www.sigridfadrique.com</button>
-                  <button className="tag">www.lamodebcn.com</button>
-                  <button className="tag"value={elarteessano} onClick={this.handleMouseOver}>www.elartesano.com</button>
+                  <button className="tag" value={plantiful} onClick={this.handleMouseOver}>www.plantifulapp.com</button>
+                  <button className="tag" value={lamode} onClick={this.handleMouseOver}>www.lamodebcn.com</button>
+                  <button className="tag" value={elarteessano} onClick={this.handleMouseOver}>www.elarteessano.es</button>
                   <button className="tag">Misc.</button>
                 </div>
                 <div className="icon-text">
